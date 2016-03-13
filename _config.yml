@@ -17,8 +17,10 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # Collections
 collections:
-  - performances
-  - videos
+  performance:
+    output: true
+  video:
+    output: true
 
 defaults:
   - scope:
@@ -35,7 +37,7 @@ defaults:
     values:
       layout: single_video
       title: ""
-      link: ""
+      video_link: ""
 
 # Build settings
 markdown: kramdown
