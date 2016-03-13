@@ -28,9 +28,11 @@
     <div class="container">
       <h1>Upcoming Events</h1>
     </div>
-    {% comment %}
-    list performances here
-    {% endcomment %}
+    {% for performance in site.performance %}
+      {% if performance.performance_date > site.time %}
+      {{ performance }}
+      {% endif %}
+    {% endfor %}
 
     <div class="container">
       <h1>Projects</h1>
