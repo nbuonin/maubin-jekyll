@@ -1,15 +1,11 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: about
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+<p>
+  <span class="drop-cap">A</span> passionate advocate for American and contemporary music, Dr. Matthew Aubin has conducted and performed internationally from Benaroya Hall to Carnegie Hall to the Musikverein and many stops in between. In his role as Artistic Director for The Chelsea Symphony in New York City, he has worked to expand the symphony’s prestige and recognition. Dr. Aubin has played a principal role in the initiation and development of The Chelsea Symphony’s annual competition for emerging New York area composers. The Conductor Laureate of the Seattle Symphony and music director of the All-Star Orchestra, Gerard Schwarz, adjudicates the competition. Dr. Aubin has led TCS in their Lincoln Center Debut and conducted the New York City premieres of works by Mark O’Connor, Gerard Schwarz and Caroline Shaw, among others. During his time as Artistic Director, TCS has also featured many celebrities as narrators for their annual holiday concert. Additionally, Dr. Aubin serves as a consultant for the new Amazon Prime and Golden Globe award-winning television series Mozart in the Jungle created by Roman Coppola and Jason Schwartzman.<br/>
+  <br/>
+  Dr. Aubin is the foremost scholar on the French composer Fernande Breilh-Decruck. He has earned multiple research grants to study her significant life and work. Dr. Aubin is a champion of the critical role of women in composition and is working to promote Decruck’s newly discovered lost music. Dr. Aubin has edited and created critical editions of her work, which are now in the process of publication. He has collaborated with several TCS musicians to organize performances of Decruck’s music in the United State and abroad. Dr. Aubin continues to be active as a freelance horn player, and regularly performs across the country. Before deciding to devote his time entirely to TCS, Dr. Aubin was the Educational Programs Conductor for the Hartford Symphony Orchestra and served on the faculties of Washington State University and The Hartt School.
+</p><br/>
+<br/>
+<h2>Press Kit</h2>
+<p><a href="files/aubin_press_kit.zip" download>Download Press Kit Here.</a></p>
