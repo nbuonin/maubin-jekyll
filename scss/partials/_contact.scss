@@ -1,0 +1,68 @@
+nav.contact-nav {
+  color: #FFFFFF;
+}
+
+nav.contact-nav h1 a, nav.contact-nav .menu a {
+  @include respond-to(medium-plus) {
+    color: inherit;
+  }
+}
+
+div.marquee-container.contact-page-marquee {
+  background-image: url('../images/2978-1.jpg'); // was 143-1
+}
+
+main.contact-page {
+  .container.narrow {
+    max-width: 600px;
+    flex-flow: column nowrap;
+    margin: auto;
+  }
+  form {
+    width: 100%;
+    > * {
+      display: block;
+      width: 100%;
+    }
+
+    input {
+      margin-bottom: 2em;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    textarea {
+      margin: 0 0 2em 0;
+      height: 150px;
+    }
+
+    input[type=text], input[type=email], textarea {
+      padding: 0.5em 1em;
+    }
+
+    input[type=submit] {
+      margin: 0 auto;
+      padding: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 2px;
+      width: 150px;
+      background-color: $secondary-color;
+      font-weight: bold;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  #success, #error {
+    text-align: center;
+  }
+
+  .site-credit {
+    margin: 3em 0 1em;
+    font-size: 0.75em;
+  }
+}

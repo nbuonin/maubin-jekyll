@@ -1,0 +1,49 @@
+.container {
+  max-width: $max-container-width;
+  margin: 0 $container-margin;
+  display: flex;
+  flex-flow: row wrap;
+
+  @include respond-to(super-wide){
+    max-width: $max-container-width;
+    margin: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    color: lighten(#000000, 50%);
+  }
+}
+
+main {
+
+  display: block;
+  //margin-bottom: 23px;
+
+  @include respond-to(medium-plus) {
+    padding-top: 10px;
+    min-height: 81vh;
+  }
+
+  a {
+    color: $link-color;
+  }
+}
+
+main > .container {
+   margin: 0 $page-margin;
+  @include respond-to(super-wide){
+    max-width: $max-container-width;
+    margin: auto;
+  }
+}
+
+img, svg {
+  width: 100%;
+}
+
+

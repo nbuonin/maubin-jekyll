@@ -1,0 +1,25 @@
+nav.about-nav {
+  color: #FFFFFF;
+}
+
+nav.about-nav h1 a, nav.about-nav .menu a {
+  @include respond-to(medium-plus) {
+    color: inherit;
+  }
+}
+
+div.marquee-container.about-page-marquee {
+  background-image: url('../images/matt_aubin154-2.jpg');
+}
+
+main.about-page {
+  .container.narrow {
+    max-width: 600px;
+    flex-flow: column nowrap;
+    line-height: 1.4em;
+    margin: auto;
+  }
+
+
+
+}

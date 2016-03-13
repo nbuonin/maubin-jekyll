@@ -1,0 +1,47 @@
+nav.home-page-nav {
+  @include respond-to(medium-plus) {
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+  }
+}
+
+div.marquee-container.home-page-marquee {
+  background-image: url('../images/matt_aubin083-1.jpg');
+}
+
+
+main.home-page {
+  //padding-top: 100px;
+
+  .container.logos {
+
+    flex-flow: column nowrap;
+    @include respond-to(medium-plus) {
+      max-width: 700px;
+    }
+
+     > div {
+      margin-bottom: 2em;
+     }
+
+    .fbd-logo {
+      @include respond-to(medium-plus) {
+        flex: 4;
+      }
+    }
+    .tcs-logo-container {
+      flex: 1;
+      margin: 0 auto;
+      width: 80%;
+      @include respond-to(medium-plus) {
+        margin: 0 auto;
+      }
+    }
+    .mitj {
+      @include respond-to(medium-plus) {
+        width: 50%;
+        margin: auto;
+      }
+    }
+  }
+}

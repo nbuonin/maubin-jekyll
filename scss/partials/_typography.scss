@@ -1,0 +1,103 @@
+// $display: 'Josefin Sans', 'Open Sans', sans-serif;
+$display: 'ltc-bodoni-175', serif;
+//$body: 'pt-sans', 'Open Sans', sans-serif;
+$body: 'proxima-nova', 'Open Sans', sans-serif;
+
+body {
+  font-size: 18px; // 18px
+  line-height: 1.25em;
+  font-family: $display;
+  // font-weight: 300;
+  //font-weight: 600;
+}
+
+nav h1 {
+  font-size: 2.5em; //31.5px = 1.75em
+  font-family: $display;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  @include respond-to(small) {
+    line-height: 1em;
+  }
+  text-align: center;
+  // font-weight: 400;
+  //font-weight: 700;
+}
+
+main h1 {
+  font-size: 1.75em; //31.5px = 1.75em
+  font-family: $display;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 1.5em auto 1em;
+  text-align: center;
+  @include respond-to(medium-plus) {
+    margin: 3em auto 3em;
+  }
+  //font-style: italic;
+  // font-weight: 400;
+  //font-weight: 600;
+}
+
+h2 {
+  font-family: $body;
+  font-style: italic;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  //padding-top: 0.6em;
+  //padding-bottom: 1em;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: $display;
+  font-size: 1.1em;
+  //font-weight: 700;
+  text-transform: uppercase;
+}
+
+main {
+  //font-size: 18px;
+  //font-size: 0.75em;
+  //letter-spacing: 0.75px;
+  line-height: 1.5em;
+  font-family: $body;
+  font-weight: 300;
+}
+
+input {
+  font-family: $body;
+}
+
+nav .menu {
+  font-size: 0.93em; //16.8px = 0.93
+  font-family: $display;
+  text-transform: uppercase;
+}
+
+footer .credit {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.ital {
+  font-style: italic;
+}
+
+.drop-cap {
+  font-size: 5.5em;
+  float: left;
+  line-height: 50px;
+  margin-top: 12px;
+  margin-right: 4px;
+
+  // font-size: 3.25em;
+  //     float: left;
+  //     line-height: 40px;
+  //     margin-top: 4px;
+}
+
+.sm-caps {
+  font-size: 0.75em;
+}
