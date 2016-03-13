@@ -1,12 +1,45 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Matthew Aubin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Matthew Aubin, Conductor">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- TypeKit -->
+  <script src="https://use.typekit.net/rbx5dwq.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <!-- Greenstock libraires for scrollspy -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+  <script src="js/ScrollMagic.min.js"></script>
+  <script src="js/plugins/animation.gsap.min.js"></script>
+  <!-- <script src="js/plugins/debug.addIndicators.min.js"></script> -->
+  <script src="js/scripts.js"></script>
+  <!-- GA Tracking -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    ga('create', 'UA-41938474-7', 'auto');
+    ga('send', 'pageview');
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  </script>
+  <!-- Metatags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Matthew Aubin" />
+  <meta property="og:url" content="http://www.matthewaubin.com/" />
+  <meta property="og:title" content="Matthew Aubin" />
+  <meta property="og:description" content="Matthew Aubin, Conductor" />
+  <meta property="og:image" content="http://www.matthewaubin.com/images/matt_aubin083-1.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:url" content="http://www.matthewaubin.com/" />
+  <meta name="twitter:title" content="Matthew Aubin" />
+  <meta name="twitter:description" content="Matthew Aubin, Conductor" />
+  <meta name="twitter:image:src" content="http://www.matthewaubin.com/images/matt_aubin083-1.jpg" />
 </head>
