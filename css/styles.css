@@ -470,6 +470,9 @@ main.performances-page .container .little-block, .container.narrow .little-block
   display: block;
   margin: 0 auto 22px auto; }
 
+.past-schedule h2 {
+  margin-left: auto; }
+
 .container.alternate .col-1, .container.alternate .col-2 {
   padding: 20px;
   border: solid 4px #F0B430;
