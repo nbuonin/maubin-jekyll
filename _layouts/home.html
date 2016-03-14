@@ -28,7 +28,7 @@
     <div class="container">
       <h1>Upcoming Events</h1>
     </div>
-    {% assign items = site.performance | sort: 'performance_date' | reverse %}
+    {% assign items = site.performance | sort: 'performance_date' %}
     {% for item in items %}
       {% assign current_date = site.time | date: "%s" %}
       {% assign perf_date = item.performance_date | date: "%s" %}
