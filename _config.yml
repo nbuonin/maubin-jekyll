@@ -42,5 +42,3 @@ defaults:
 
 # Build settings
 markdown: kramdown
-  input: GFM
-  hard_wrap: false
