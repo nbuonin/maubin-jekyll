@@ -30,14 +30,15 @@ defaults:
       layout: performance
       performance_date: ""
       group: ""
-      group_link: ""
+      group_link: "#" # the hash here is used as sentinel value, a link is NOT rendered if it's present
   - scope:
       path: ""
       type: video
     values:
       layout: single_video
-      title: ""
+      video_title: ""
       video_link: ""
+      weight: 0
 
 # Build settings
 markdown: kramdown

@@ -2,7 +2,11 @@
   <div class="col-1">
     <div class="performance-info">
       <div class="performance-group">
-        <a href="{{ page.group_link }}"><h2>{{ page.group }}</h2></a>
+        {% if page.group_link contains "#" %}
+          <h2>{{ page.group }}</h2>
+        {% else %}
+          <a href="{{ page.group_link }}"><h2>{{ page.group }}</h2></a>
+        {% endif %}
       </div>
       <div class="performance-date">
         {{ page.performance_date | date: "%A, %B %-d, %Y"}}
