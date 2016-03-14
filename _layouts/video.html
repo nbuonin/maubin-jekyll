@@ -28,8 +28,9 @@
     <div class="container">
       <h1>Video</h1>
     </div>
-    {% for video in site.video %}
-      {{ video }}
+    {% assign items = site.video | sort: 'weight' %}
+    {% for item in items %}
+      {{ item }}
     {% endfor %}
 
   </main>
