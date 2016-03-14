@@ -27,7 +27,6 @@ defaults:
       path: ""
       type: performance
     values:
-      layout: performance
       performance_date: ""
       group: ""
       group_link: "#" # the hash here is used as sentinel value, a link is NOT rendered if it's present
@@ -35,7 +34,6 @@ defaults:
       path: ""
       type: video
     values:
-      layout: single_video
       video_title: ""
       video_link: ""
       weight: 0
