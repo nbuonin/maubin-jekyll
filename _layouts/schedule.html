@@ -28,12 +28,18 @@
     <div class="container">
       <h1>Schedule</h1>
     </div>
-    {% for performance in site.performance %}
-      {{ performance }}
+    {% assign items = site.performance | sort: 'performance_date' | reverse %}
+    {% for item in items %}
+      {% assign current_date = site.time | date: "%s" %}
+      {% assign perf_date = item.performance_date | date: "%s" %}
+      {% if perf_date > current_date %}
+        {{ item }}
+      {% endif %}
     {% endfor %}
-
+    <div class="container past-schedule">
+      <h2><a href="past_schedule.html">Previous Performances <i class="fa fa-angle-double-right"></i></a></h2>
+    </div>
   </main>
-
   {% include footer.html %}
   </body>
 </html>

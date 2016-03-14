@@ -28,9 +28,12 @@
     <div class="container">
       <h1>Upcoming Events</h1>
     </div>
-    {% for performance in site.performance %}
-      {% if performance.performance_date > site.time %}
-      {{ performance }}
+    {% assign items = site.performance | sort: 'performance_date' | reverse %}
+    {% for item in items %}
+      {% assign current_date = site.time | date: "%s" %}
+      {% assign perf_date = item.performance_date | date: "%s" %}
+      {% if perf_date > current_date %}
+        {{ item }}
       {% endif %}
     {% endfor %}
 
