@@ -31,6 +31,27 @@
     {% assign items = site.video | sort: 'weight' %}
     {% for item in items %}
       {{ item }}
+      <div class="container"> <!-- each container will hold each video and caption -->
+        <div class="col-1">
+          <div class="video-info">
+            <div class="video-title">
+              <h2>{{ item.video_title}}</h2>
+            </div>
+            <div class="video-caption">
+              {{ item.content }}
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-2">
+          <div class="work-container">
+            <div class="video-container">
+              <iframe src="{{ item.video_link }}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end of .container -->
     {% endfor %}
 
   </main>
