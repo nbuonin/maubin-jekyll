@@ -29,7 +29,7 @@
       <h1>Schedule</h1>
     </div>
     {% assign items = site.performance | sort: 'performance_date' %}
-    {% for item in items %}
+    {% for item in items limit:4 %}
       {% assign current_date = site.time | date: "%s" %}
       {% assign perf_date = item.performance_date | date: "%s" %}
       {% if perf_date > current_date %}
