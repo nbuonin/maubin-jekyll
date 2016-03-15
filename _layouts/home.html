@@ -29,10 +29,11 @@
       <h1>Upcoming Events</h1>
     </div>
     {% assign items = site.performance | sort: 'performance_date' %}
-    {% for item in items limit:4 %}
+    <!-- {% increment i %} -->
+    {% for item in items %}
       {% assign current_date = site.time | date: "%s" %}
       {% assign perf_date = item.performance_date | date: "%s" %}
-      {% if perf_date > current_date %}
+      {% if perf_date > current_date and i <= 4 %}
         <div class="container narrow"> <!-- each container will hold each performance event -->
           <div class="col-1">
             <div class="performance-info">
@@ -55,6 +56,7 @@
             </div>
           </div>
         </div> <!-- end of .container -->
+        <!--  {% increment i %} -->
       {% endif %}
     {% endfor %}
 
