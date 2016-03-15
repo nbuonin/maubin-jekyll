@@ -58,12 +58,14 @@ nav {
 
   .menu ul {
     display: flex;
-    flex: row nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
 
-    // @include respond-to(medium-plus) {
-    //   display: flex;
-    //   flex: row nowrap;
-    // }
+    @include respond-to(medium-plus) {
+      display: flex;
+      flex: row nowrap;
+      justify-content: space-between;
+    }
 
     li {
       margin-bottom: 0.5em;

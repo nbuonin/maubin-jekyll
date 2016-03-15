@@ -18,7 +18,7 @@ main.performances-page .container, .container.narrow{
   align-items: baseline;
   max-width: 550px;
   //align-items: center;
-  margin: auto;
+  //margin: auto;
 
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
