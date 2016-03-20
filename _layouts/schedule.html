@@ -28,35 +28,7 @@
     <div class="container">
       <h1>Schedule</h1>
     </div>
-    {% assign items = site.performance | sort: 'performance_date' %}
-    {% for item in items limit:4 %}
-      {% assign current_date = site.time | date: "%s" %}
-      {% assign perf_date = item.performance_date | date: "%s" %}
-      {% if perf_date > current_date %}
-        <div class="container narrow"> <!-- each container will hold each performance event -->
-          <div class="col-1">
-            <div class="performance-info">
-              <div class="performance-group">
-                {% if item.group_link contains "#" %}
-                  <h2>{{ item.group }}</h2>
-                {% else %}
-                  <a href="{{ item.group_link }}"><h2>{{ item.group }}</h2></a>
-                {% endif %}
-              </div>
-              <div class="performance-date">
-                {{ item.performance_date | date: "%A, %B %-d, %Y"}}
-              </div>
-            </div>
-          </div>
-
-          <div class="col-2">
-            <div class="performance-program">
-              {{ item.content }}
-            </div>
-          </div>
-        </div> <!-- end of .container -->
-      {% endif %}
-    {% endfor %}
+    {% include upcoming_events.html %}
     <div class="container past-schedule">
       <h2><a href="past_schedule.html">Previous Events <i class="fa fa-angle-double-right"></i></a></h2>
     </div>
