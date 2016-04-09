@@ -9,8 +9,8 @@ $(document).ready(function() {
         method: "POST",
         data: {
           name: $(form).find("input[name='name']").val(),
-          message: $(form).find("input[name='message']").val(),
-          email: $(form).find("textarea[name='email']").val()
+          message: $(form).find("textarea[name='message']").val(),
+          email: $(form).find("input[name='_replyto']").val()
         },
         dataType: "json",
         success: function() {
