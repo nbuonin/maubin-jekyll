@@ -3,7 +3,7 @@
 {% for item in items %}
   {% assign current_date = site.time | date: "%s" %}
   {% assign perf_date = item.performance_date | date: "%s" %}
-  {% if perf_date > current_date and i <= 3 %}
+  {% if perf_date > current_date %}
     <div class="container narrow"> <!-- each container will hold each performance event -->
       <div class="col-1">
         <div class="performance-info">
