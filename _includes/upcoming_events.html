@@ -1,8 +1,12 @@
 {% assign items = site.performance | sort: 'performance_date' %}
 {% assign i = 0%}
+{% assign current_date = site.time | date: "%s" %}
+{% assign seconds_in_day = 86400 %}
+{% assign seconds_from_epoch = current_date | modulo:seconds_in_day %}
+{% assign current_date = current_date | minus:seconds_from_epoch %}
 {% for item in items %}
-  {% assign current_date = site.time | date: "%s" %}
   {% assign perf_date = item.performance_date | date: "%s" %}
+  {% assign perf_date = perf_date | to_integer %}
   {% if perf_date >= current_date %}
   <div class="container narrow future-performance" data-performance-date="{{perf_date}}"> <!-- each container will hold each performance event -->
       <div class="col-1">

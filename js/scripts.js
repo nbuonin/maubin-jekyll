@@ -34,14 +34,15 @@ $(document).ready(function() {
     .addTo(controller);
 
   var performance = document.getElementsByClassName('future-performance');
-  // Imprecise way of getting today's date w/o a library
-  // It subtracts a day's worth of milliseconds because a visitor could view 
-  // the page anytime during that day.
-  var today = Date.now() - (24 * 60 * 60 * 1000);
+  // Calculate the seconds from the epoch to midnight of the current day
+  var secondsFromEpoch= Math.floor(Date.now() / 1000);
+  var secondsInADay = 24 * 60 * 60;
+  var secondsFromMidnight = secondsFromEpoch % secondsInADay;
+  var today -= secondsFromMidnight;
   for (var i = 0; i < performance.length; i++) {
       var pdate = performance[i].dataset.performanceDate;
       // convert the seconds from the Jekyll template to milliseconds
-      pdate = parseInt(pdate) * 1000;
+      pdate = parseInt(pdate);
       // if the performance is in the past hide it
       if (pdate < today) {
           performance[i].style.display = "none";
