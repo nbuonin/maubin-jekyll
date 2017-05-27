@@ -33,5 +33,18 @@ $(document).ready(function() {
     //.addIndicators({name: "1 (duration: 450)"}) // add indicators (requires plugin)
     .addTo(controller);
 
-
+  var performance = document.getElementsByClassName('future-performance');
+  // Imprecise way of getting today's date w/o a library
+  // It subtracts a day's worth of milliseconds because a visitor could view 
+  // the page anytime during that day.
+  var today = Date.now() - (24 * 60 * 60 * 1000);
+  for (var i = 0; i < performance.length; i++) {
+      var pdate = performance[i].dataset.performanceDate;
+      // convert the seconds from the Jekyll template to milliseconds
+      pdate = parseInt(pdate) * 1000;
+      // if the performance is in the past hide it
+      if (pdate < today) {
+          performance[i].style.display = "none";
+      }
+  }
 });
