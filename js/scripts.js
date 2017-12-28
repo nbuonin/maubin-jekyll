@@ -38,7 +38,7 @@ $(document).ready(function() {
   var secondsFromEpoch= Math.floor(Date.now() / 1000);
   var secondsInADay = 24 * 60 * 60;
   var secondsFromMidnight = secondsFromEpoch % secondsInADay;
-  var today -= secondsFromMidnight;
+  var today = secondsFromEpoch - secondsFromMidnight;
   for (var i = 0; i < performance.length; i++) {
       var pdate = performance[i].dataset.performanceDate;
       // convert the seconds from the Jekyll template to milliseconds
