@@ -1,5 +1,5 @@
 ---
-video_title: Rimsky-Korsakov, _Scheherazade_<br/>Mvt. 1
+video_title: Rimsky-Korsakov, Scheherazade<br/>Mvt. 1
 video_link: https://youtu.be/cPNI8Ej-T9E
 weight: 3
 ---
