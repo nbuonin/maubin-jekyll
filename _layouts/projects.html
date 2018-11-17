@@ -18,20 +18,33 @@
 {% include head.html %}
 
 <body>
-  <nav class="home-page-nav">
+  <nav class="projects-nav">
     {% include nav.html %}
   </nav>
 
-  <div class="marquee-container home-page-marquee"></div>
+  <div class="marquee-container about-page-marquee"></div>
 
-  <main class="content home-page" role="main">
+  <main class="projects-page" role="main">
     <div class="container">
-      <h1>Upcoming Events</h1>
+      <h1>Projects</h1>
     </div>
-    {% include upcoming_events.html %}
-  </div> <!-- End of container -->
 
-</main>
-{% include footer.html %}
+    <div class="container logos"> <!-- each container will hold each performance event -->
+          <div class="fbd-logo logo">
+              <a href="http://fernandedecruck.com" target="_blank">
+                  {% include decruck_logo.html %}
+              </a>
+          </div>
+          <div class="tcs-logo-container logo">
+              <a href="http://chelseasymphony.org" target="_blank"><img src="images/TCSlogo-horizontal.png" alt=""></a>
+          </div>
+          <div class="mitj logo">
+              <a href="http://www.amazon.com/Mozart-Jungle-Season-1/dp/B00I3MNGCG"><img src="images/mitj.jpg"></a>
+          </div>
+    </div> <!-- end of .container -->
+
+  </main>
+
+  {% include footer.html %}
   </body>
 </html>
