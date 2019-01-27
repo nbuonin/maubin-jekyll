@@ -9,10 +9,72 @@ div.marquee-container.home-page-marquee {
   background-image: url('../images/matt_aubin083-1.jpg');
 }
 
+.hp-schedule {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include respond-to(medium-plus) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    grid-auto-rows: 1fr;
+
+    .hp-schedule-item {
+        background-position: center;
+        background-size: cover;
+        padding: 0.5em;
+        min-height: 350px;
+
+        &:nth-of-type(1) {
+            background-image: url('../images/matt_aubin083-1.jpg');
+        }
+    
+        &:nth-of-type(2) {
+            background-image: url('../images/matt_aubin061-1.jpg');
+        }
+
+        &:nth-of-type(3) {
+            background-image: url('../images/matt_aubin124-1.jpg');
+        }
+        &:nth-of-type(4) {
+            background-image: url('../images/matt_aubin143-1.jpg');
+        }
+        &:nth-of-type(5) {
+            background-image: url('../images/matt_aubin154-1.jpg');
+        }
+        &:nth-of-type(6) {
+            background-image: url('../images/matt_aubin147.jpg');
+        }
+    }
+}
+
+.hp-video-container, .hp-project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include respond-to(medium-plus) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    grid-auto-rows: 1fr;
+
+    
+    //.hp-video-item {
+      //position: relative;
+      //padding-bottom: 56.25%;
+      //height: 0;
+      //overflow: hidden;
+      //max-width: 100%;
+      //height: auto;
+    //}
+
+    //.hp-video-item iframe {
+      //position: absolute;
+      //top: 0;
+      //left: 0;
+      //width: 100%;
+      //height: 100%;
+    //}
+
+}
 
 main.home-page {
-  //padding-top: 100px;
-
   .container.logos {
 
     flex-flow: column nowrap;

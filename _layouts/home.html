@@ -27,34 +27,71 @@
   <main class="content home-page" role="main">
     <div class="container"> 
       <h1>About</h1>
-    </div>
-    <div class="container">
+      <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
         tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
         vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-        no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. <a href="#">Learn More &hellip;</a>
+      </p>
     </div>
     <div class="container">
       <h1>Schedule</h1>
+      <div class="hp-schedule">
+          <div class="hp-schedule-item">
+              <h2>The Chelsea Symphony</h2>
+              <span class="dates">Jan 21, 22</span>
+              <p>Music of Dai, Martin, Bach, and Sibelius</p>
+          </div>
+          <div class="hp-schedule-item">
+              <h2>The Chelsea Symphony</h2>
+              <span class="dates">Jan 21, 22</span>
+              <p>Music of Dai, Martin, Bach, and Sibelius</p>
+          </div>
+          <div class="hp-schedule-item">
+              <h2>The Chelsea-Jackson Symphony</h2>
+              <span class="dates">Jan 21, 22</span>
+              <p>Music of Dai, Martin, Bach, and Sibelius</p>
+          </div>
+          <div class="hp-schedule-item">
+              <h2>The Chelsea Symphony</h2>
+              <span class="dates">Jan 21, 22</span>
+              <p>Music of Dai, Martin, Bach, and Sibelius</p>
+          </div>
+          <div class="hp-schedule-item">
+              <h2>The Chelsea Symphony</h2>
+              <span class="dates">Jan 21, 22</span>
+              <p>Music of Dai, Martin, Bach, and Sibelius</p>
+          </div>
+          <div class="hp-schedule-item">
+              <h2>The Chelsea Symphony</h2>
+              <span class="dates">Jan 21, 22</span>
+              <p>Music of Dai, Martin, Bach, and Sibelius</p>
+          </div>
+      </div>
     </div>
-    {% include upcoming_events.html %}
     <div class="container"> 
       <h1>Video</h1>
-    </div>
-    <div class="container">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-        no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      <div class="hp-video-container">
+          <div class="hp-video-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/r9RYrpkx0co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="hp-video-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/kzqOJy8fxRE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
     </div>
     <div class="container"> 
       <h1>Projects</h1>
-    </div>
-    <div class="container">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-        no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      <div class="hp-project-container">
+          <div class="fbd-logo logo">
+              <a href="http://fernandedecruck.com" target="_blank">
+                  {% include decruck_logo.html %}
+              </a>
+          </div>
+          <div class="tcs-logo-container logo">
+              <a href="http://chelseasymphony.org" target="_blank"><img src="images/TCSlogo-horizontal.png" alt=""></a>
+          </div>
+      </div>
     </div>
   </div> <!-- End of container -->
 
