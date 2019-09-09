@@ -1,13 +1,3 @@
-nav.contact-nav {
-  color: #FFFFFF;
-}
-
-nav.contact-nav h1 a, nav.contact-nav .menu a {
-  @include respond-to(medium-plus) {
-    color: inherit;
-  }
-}
-
 div.marquee-container.contact-page-marquee {
   background-image: url('../images/matt_aubin143-.jpg'); // was 143-1
 }

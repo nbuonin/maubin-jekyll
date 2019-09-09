@@ -1,37 +1,65 @@
-<!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:og="http://ogp.me/ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:sioc="http://rdfs.org/sioc/ns#"
-  xmlns:sioct="http://rdfs.org/sioc/types#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-  xmlns:fb="http://ogp.me/ns/fb#"
-  xmlns:article="http://ogp.me/ns/article#"
-  xmlns:book="http://ogp.me/ns/book#"
-  xmlns:profile="http://ogp.me/ns/profile#"
-  xmlns:video="http://ogp.me/ns/video#"
-  xmlns:product="http://ogp.me/ns/product#">
 <html>
-{% include head.html %}
+    {% include head.html %}
 
-<body>
-  <nav class="home-page-nav">
-    {% include nav.html %}
-  </nav>
+    <body>
+        <nav class="home-page-nav">
+            {% include nav.html %}
+        </nav>
 
-  <div class="marquee-container home-page-marquee"></div>
+        <div class="marquee-container home-page-marquee">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 marquee-name-container">
+                        <span class="marquee-name">M<span class="sm-caps">atthew</span><br />
+                            A<span class="sm-caps">ubin</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <main class="content home-page" role="main">
-    <div class="container">
-      <h1>Upcoming Events</h1>
-    </div>
-    {% include upcoming_events.html %}
-  </div> <!-- End of container -->
-
-</main>
-{% include footer.html %}
-  </body>
+        <div class="hp-about">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-6 hp-about-content-container">
+                        <div class="hp-about-tag-container">
+                            <div class="hp-about-tag">
+                                Conductor Musician
+                            </div>
+                            <div class="hp-about-tag-ampersand">
+                                &amp;
+                            </div>
+                        </div>
+                        <div class="hp-about-copy-container">
+                            <div class="hp-copy-shape-left"></div>
+                            <div class="hp-copy-shape-right"></div>
+                            <div class="hp-about-copy">
+                                <p>
+                                    A passionate advocate for American and
+                                    contemporary music, Dr. Matthew Aubin has
+                                    conducted and performed internationally from
+                                    Carnegie Hall to the Musikverein and many stops
+                                    in between. Currently in his second season as
+                                    Music Director of the Jackson Symphony
+                                    Orchestra, Dr. Aubin also serves as Artistic
+                                    Director for The Chelsea Symphony in New York
+                                    City.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hp-about-cta">
+                            <a class="btn" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="content home-page" role="main">
+            <div class="container">
+                <h1>Upcoming Events</h1>
+            </div>
+            {% include upcoming_events.html %}
+            </div> <!-- End of container -->
+        </main>
+        {% include footer.html %}
+    </body>
 </html>

@@ -27,10 +27,13 @@ $(document).ready(function() {
   //Scroll-spy
   var controller = new ScrollMagic.Controller({loglevel: 3});
 
-  var scene = new ScrollMagic.Scene({triggerElement: ".home-page", duration: 200})
-    // animate color and top border in relation to scroll position
-    .setTween("nav", {backgroundColor: "#ffffff", boxShadow: "0 2px 8px 0 rgba(0,0,0,0.5),0 -5px 3px -10px #fff", color: "#000000"}) // the tween durtion can be omitted and defaults to 1
-    //.addIndicators({name: "1 (duration: 450)"}) // add indicators (requires plugin)
+  // animate color and top border in relation to scroll position
+  new ScrollMagic.Scene({triggerElement: ".hp-about", duration: 200})
+    .setTween("nav", {backgroundColor: "#ffffff", boxShadow: "0 2px 8px 0 rgba(0,0,0,0.5),0 -5px 3px -10px #fff", color: "#000000"})
+    .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: ".hp-about", duration: 200})
+    .setTween("nav.home-page-nav h1", {display: "block"})
     .addTo(controller);
 
   var performance = document.getElementsByClassName('future-performance');

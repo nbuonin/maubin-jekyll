@@ -1,7 +1,7 @@
-// $display: 'Josefin Sans', 'Open Sans', sans-serif;
 $display: 'ltc-bodoni-175', serif;
-//$body: 'pt-sans', 'Open Sans', sans-serif;
+$serif: $display;
 $body: 'proxima-nova', 'Open Sans', sans-serif;
+$sans: $body;
 
 body {
   font-size: 18px; // 18px
@@ -100,4 +100,17 @@ footer .credit {
 
 .sm-caps {
   font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+.btn {
+    display: block;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: $sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.8em 3.2em;
+    width: fit-content;
+    letter-spacing: 2px;
 }
