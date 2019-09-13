@@ -114,3 +114,12 @@ footer .credit {
     width: fit-content;
     letter-spacing: 2px;
 }
+
+.btn-sm {
+    @extend .btn;
+    font-size: 0.8rem;
+    line-height: 1em;
+    padding: 0.6em 0.8em 0.5em;
+    background-color: $md-grey;
+    letter-spacing: 0px;
+}

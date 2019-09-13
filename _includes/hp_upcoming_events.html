@@ -1,0 +1,36 @@
+{% assign items = site.performance | sort: 'performance_date' %}
+{% assign i = 0%}
+{% assign current_date = site.time | date: "%s" %}
+{% assign seconds_in_day = 86400 %}
+{% assign seconds_from_epoch = current_date | modulo:seconds_in_day %}
+{% assign current_date = current_date | minus:seconds_from_epoch %}
+{% for item in items %}
+  {% assign perf_date = item.performance_date | date: "%s" %}
+  {% assign perf_date = perf_date | to_integer %}
+  {% if perf_date >= current_date %}
+  <div class="row justify-content-center" data-performance-date="{{perf_date}}"> <!-- each container will hold each performance event -->
+      <div class="col-8 hp-future-performance">
+          <div class="hp-perf-date">
+              <div class="hp-perf-day">
+                {{ item.performance_date | date: "%d"}}
+              </div>
+              <div class="hp-perf-date-container">
+                  <div class="hp-perf-month">
+                    {{ item.performance_date | date: "%b"}}
+                  </div>
+                  <div class="hp-perf-year">
+                    {{ item.performance_date | date: "%Y"}}
+                  </div>
+              </div>
+          </div>
+          <div class="hp-perf-name">
+              <span>{{ item.group }}</span>&nbsp;//&nbsp;&nbsp;{{ item.location }}
+          </div>
+          <div class="hp-perf-link">
+              <a href="#" class="btn-sm">Details</a>
+          </div>
+      </div>
+    </div> <!-- end of .container -->
+    {% assign i = i | plus:1 %}
+  {% endif %}
+{% endfor %}

@@ -55,10 +55,15 @@
         </div>
         <main class="content home-page" role="main">
             <div class="container">
-                <h1>Upcoming Events</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Upcoming Events</h1>
+                    </div>
+                </div>
             </div>
-            {% include upcoming_events.html %}
-            </div> <!-- End of container -->
+            <div class="container">
+                {% include hp_upcoming_events.html %}
+            </div>
         </main>
         {% include footer.html %}
     </body>

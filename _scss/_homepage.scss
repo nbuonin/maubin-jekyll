@@ -38,6 +38,7 @@ $hp-about-height: 600px;
             font-size: 12rem;
             left: 16rem;
             top: -4rem;
+            width: fit-content;
             color: rgb(197, 197, 197);
         }
 
@@ -59,6 +60,71 @@ $hp-about-height: 600px;
 
         .hp-about-cta {
             margin: 0 auto;
+        }
+    }
+}
+
+.hp-future-performance {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    @include respond-to(medium-plus) {
+        flex-flow: row nowrap;
+        padding-bottom: 1em;
+        border-bottom: solid 4px $md-grey;
+        border-style: dotted;
+        margin-bottom: 1em;
+    }
+
+    .hp-perf-date {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-right: 1em;
+        border-right: solid 5px $md-grey;
+
+        .hp-perf-day {
+            font-family: $sans;
+            font-weight: 600;
+            font-size: 2.75rem;
+            line-height: 1em;
+            color: $lt-grey;
+            width: 1.5em;
+            text-align: right;
+        }
+
+        .hp-perf-date-container {
+            display: flex;
+            flex-flow: column nowrap;
+            font-family: $sans;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1em;
+            text-transform: uppercase;
+            color: $dk-grey;
+
+            .hp-perf-month {
+                margin-top: 0.3rem;
+            }
+        }
+    }    
+    .hp-perf-name {
+        display: flex;
+        flex-flow: row nowrap;
+        color: $md-grey;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        @include respond-to(medium-plus) {
+            padding-left: 1em;
+            align-self: center;
+        }
+    }
+    .hp-perf-link {
+        @include respond-to(medium-plus) {
+            margin-left: auto;
+            margin-right: 2em;
+            align-self: center;
         }
     }
 }
