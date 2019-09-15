@@ -73,8 +73,7 @@ $hp-about-height: 600px;
     @include respond-to(medium-plus) {
         flex-flow: row nowrap;
         padding-bottom: 1em;
-        border-bottom: solid 4px $md-grey;
-        border-style: dotted;
+        @include dottedBottomCircleBorder($spacing: 15px, $radius: 1px);
         margin-bottom: 1em;
     }
 

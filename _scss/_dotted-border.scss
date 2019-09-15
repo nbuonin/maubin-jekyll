@@ -1,0 +1,8 @@
+﻿// Assembled from various answers here: https://stackoverflow.com/questions/6250394/how-to-increase-space-between-dotted-border-dots
+@mixin dottedBottomCircleBorder($color: #000000, $spacing: 5px, $radius: 1px) {
+    background-image:
+        radial-gradient(circle, #000 $radius, rgba(255,255,255,0) $radius);
+    background-position: bottom;
+    background-size: (($radius * 2) + $spacing) ($radius * 2);
+    background-repeat: repeat-x;
+}
