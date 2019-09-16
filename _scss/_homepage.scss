@@ -64,6 +64,10 @@ $hp-about-height: 600px;
     }
 }
 
+.hp-events {
+    margin-bottom: 2em;
+}
+
 .hp-future-performance {
     display: flex;
     flex-flow: column nowrap;
@@ -112,6 +116,7 @@ $hp-about-height: 600px;
         display: flex;
         flex-flow: row nowrap;
         color: $md-grey;
+        font-family: $sans;
         font-size: 1.25rem;
         text-transform: uppercase;
         @include respond-to(medium-plus) {
@@ -128,39 +133,43 @@ $hp-about-height: 600px;
     }
 }
 
+.hp-concerts-cta {
+    margin: 0 auto;
+}
 
-main.home-page {
-  //padding-top: 100px;
+.hp-video {
+    background-color: rgb(51, 51, 51);
+    color: #FFFFFF;
+    padding-top: 4em;
+    //padding-bottom: 4em;
 
-  .container.logos {
-
-    flex-flow: column nowrap;
-    @include respond-to(medium-plus) {
-      max-width: 700px;
+    h1 {
+       text-align: unset; 
+       margin: 0;
+       position: absolute;
+       top: -1.75em;
     }
 
-     > div {
-      margin-bottom: 2em;
-     }
+    .hp-video-item {
+        background-color: rgb(61, 61, 61);
+        @include respond-to(medium-plus) {
+            padding: 3rem 4rem;
+        }
 
-    .fbd-logo {
-      @include respond-to(medium-plus) {
-        flex: 4;
-      }
+        .hp-video-spcr {
+            border-top: solid #FFFFFF 5px;
+            width: 6em;
+            margin-bottom: 2em;
+        }
+         h2, p {
+             margin-bottom: 1em;
+         }
+         p {
+             font-family: $sans;
+         }
     }
-    .tcs-logo-container {
-      flex: 1;
-      margin: 0 auto;
-      width: 80%;
-      @include respond-to(medium-plus) {
-        margin: 0 auto;
-      }
+
+    .hp-video-cta {
+        margin: 2rem 0;
     }
-    .mitj {
-      @include respond-to(medium-plus) {
-        width: 50%;
-        margin: auto;
-      }
-    }
-  }
 }

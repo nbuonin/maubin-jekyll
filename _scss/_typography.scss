@@ -11,20 +11,7 @@ body {
   //font-weight: 600;
 }
 
-nav h1 {
-  font-size: 2.5em; //31.5px = 1.75em
-  font-family: $display;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  @include respond-to(small) {
-    line-height: 1em;
-  }
-  text-align: center;
-  // font-weight: 400;
-  //font-weight: 700;
-}
-
-main h1 {
+h1 {
   font-size: 1.75em; //31.5px = 1.75em
   font-family: $display;
   text-transform: uppercase;
@@ -34,19 +21,26 @@ main h1 {
   @include respond-to(medium-plus) {
     margin: 3em auto 3em;
   }
-  //font-style: italic;
-  // font-weight: 400;
-  //font-weight: 600;
 }
+
+nav h1 {
+  font-size: 2.5em; //31.5px = 1.75em
+  font-family: $display;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  @include respond-to(small) {
+    line-height: 1em;
+  }
+  text-align: center;
+  margin: 0;
+}
+
 
 h2 {
   font-family: $body;
-  font-style: italic;
   font-size: 1.25em;
   line-height: 1.25em;
-  //padding-top: 0.6em;
-  //padding-bottom: 1em;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h3 {

@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <main class="content home-page" role="main">
+        <div class="hp-events">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -64,7 +64,32 @@
             <div class="container">
                 {% include hp_upcoming_events.html %}
             </div>
-        </main>
+        </div>
+        <section class="hp-video">
+            <div class="container">
+                <div class="row hp-video-item">
+                    <div class="col-md-5">
+                        <h1>Video</h1>
+                        <div class="hp-video-spcr"></div>
+                        <h2>Samuel Barber, Medea<br/>Op. 23. Nos. 1 &amp; 2</h2>
+                        <p>The first two movements of Samuel Barber’s Suite from Medea, Op. 23. Matthew Aubin conducting the The Chelsea Symphony.</p>
+                        <p>May 6, 2012</p>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/kzqOJy8fxRE" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 hp-video-cta">
+                            <a class="btn hp-concerts-cta" href="#">View More Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         {% include footer.html %}
     </body>
 </html>

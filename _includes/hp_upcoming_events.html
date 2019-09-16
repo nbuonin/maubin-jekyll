@@ -12,14 +12,14 @@
       <div class="col-8 hp-future-performance">
           <div class="hp-perf-date">
               <div class="hp-perf-day">
-                {{ item.performance_date | date: "%d"}}
+                  {{ item.performance_date | date: "%d"}}
               </div>
               <div class="hp-perf-date-container">
                   <div class="hp-perf-month">
-                    {{ item.performance_date | date: "%b"}}
+                      {{ item.performance_date | date: "%b"}}
                   </div>
                   <div class="hp-perf-year">
-                    {{ item.performance_date | date: "%Y"}}
+                      {{ item.performance_date | date: "%Y"}}
                   </div>
               </div>
           </div>
@@ -30,7 +30,12 @@
               <a href="#" class="btn-sm">Details</a>
           </div>
       </div>
-    </div> <!-- end of .container -->
+  </div> <!-- end of .container -->
     {% assign i = i | plus:1 %}
   {% endif %}
 {% endfor %}
+<div class="row">
+    <div class="col-12">
+        <a class="btn hp-concerts-cta" href="#">View More Events</a>
+    </div>
+</div>
