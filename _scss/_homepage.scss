@@ -13,10 +13,10 @@ $hp-about-height: 600px;
 .hp-about {
     height: $hp-about-height;
     background-color: #d3d3d3;
-    background-image: url('../images/matt_aubin061.jpg');
-    background-size: contain;
+    background-image: url('../images/matt_aubin061_web.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: -150px center;
+    background-position: center center;
 
     .hp-about-content-container {
         display: flex;
