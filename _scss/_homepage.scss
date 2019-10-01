@@ -113,8 +113,8 @@ $hp-about-height: 600px;
         }
     }    
     .hp-perf-name {
-        display: flex;
-        flex-flow: row nowrap;
+        //display: flex;
+        //flex-flow: row wrap;
         color: $md-grey;
         font-family: $sans;
         font-size: 1.25rem;
@@ -124,9 +124,20 @@ $hp-about-height: 600px;
             align-self: center;
         }
     }
-    .hp-perf-link {
+    .hp-perf-loc {
+        white-space: nowrap;
+    }
+    .hp-perf-icons {
         @include respond-to(medium-plus) {
             margin-left: auto;
+            align-self: center;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
+    .hp-perf-link {
+        @include respond-to(medium-plus) {
+            margin-left: 1em;
             margin-right: 2em;
             align-self: center;
         }
