@@ -36,19 +36,22 @@ $(document).ready(function() {
     .setTween("nav.home-page-nav h1", {display: "block"})
     .addTo(controller);
 
-  var performance = document.getElementsByClassName('future-performance');
-  // Calculate the seconds from the epoch to midnight of the current day
-  var secondsFromEpoch= Math.floor(Date.now() / 1000);
-  var secondsInADay = 24 * 60 * 60;
-  var secondsFromMidnight = secondsFromEpoch % secondsInADay;
-  var today = secondsFromEpoch - secondsFromMidnight;
-  for (var i = 0; i < performance.length; i++) {
-      var pdate = performance[i].dataset.performanceDate;
-      // convert the seconds from the Jekyll template to milliseconds
-      pdate = parseInt(pdate);
-      // if the performance is in the past hide it
-      if (pdate < today) {
-          performance[i].style.display = "none";
-      }
-  }
+    var performance = document.getElementsByClassName('future-perf-container');
+    // Calculate the seconds from the epoch to midnight of the current day
+    var secondsFromEpoch= Math.floor(Date.now() / 1000);
+    var secondsInADay = 24 * 60 * 60;
+    var secondsFromMidnight = secondsFromEpoch % secondsInADay;
+    var today = secondsFromEpoch - secondsFromMidnight;
+    var perfCounter = 0;
+
+    var NO_OF_FUTURE_PERF = 3;
+    Array.from(performance).map(function(el) {
+        var pdate = el.dataset.performanceDate;
+        pdate = parseInt(pdate);
+
+        if ((pdate >= today) && perfCounter < NO_OF_FUTURE_PERF) {
+            el.style.display = "flex";
+            perfCounter += 1;
+        }
+    });
 });

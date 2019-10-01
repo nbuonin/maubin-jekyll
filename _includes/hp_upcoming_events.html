@@ -8,7 +8,7 @@
   {% assign perf_date = item.performance_date | date: "%s" %}
   {% assign perf_date = perf_date | to_integer %}
   {% if perf_date >= current_date %}
-  <div class="row justify-content-center" data-performance-date="{{perf_date}}"> <!-- each container will hold each performance event -->
+  <div class="row justify-content-center future-perf-container" data-performance-date="{{perf_date}}" style="display: none;"> <!-- each container will hold each performance event -->
       <div class="col-8 hp-future-performance">
           <div class="hp-perf-date">
               <div class="hp-perf-day">

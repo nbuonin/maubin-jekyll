@@ -107,10 +107,15 @@ footer .credit {
     padding: 0.8em 3.2em;
     width: fit-content;
     letter-spacing: 2px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
 }
 
 .btn-sm {
     @extend .btn;
+    &:hover {
+        color: unset;
+    }
+    box-shadow: unset;
     font-size: 0.8rem;
     line-height: 1em;
     padding: 0.6em 0.8em 0.5em;
