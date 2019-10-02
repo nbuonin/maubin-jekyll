@@ -157,8 +157,13 @@ $hp-about-height: 600px;
     h1 {
        text-align: unset; 
        margin: 0;
-       position: absolute;
-       top: -1.75em;
+
+       @include respond-to(medium-plus) {
+           position: absolute;
+           top: -0.5rem;
+           z-index: 100;
+           margin-left: 3rem;
+       }
     }
 
     .hp-video-item {
@@ -182,5 +187,51 @@ $hp-about-height: 600px;
 
     .hp-video-cta {
         margin: 2rem 0;
+    }
+}
+
+.carousel-control-prev-icon {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10%;
+
+    @include respond-to(medium-plus) {
+        margin-left: -11rem;
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+    }
+    .carousel-control-prev-arrow {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 43.3px 25px 0;
+        border-color: transparent #000000 transparent transparent;
+    }
+}
+
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+
+    @include respond-to(medium-plus) {
+        margin-right: -11rem;
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+    }
+    .carousel-control-next-arrow {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 0 25px 43.3px;
+        border-color: transparent transparent transparent #000000;
     }
 }
