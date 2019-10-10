@@ -2,6 +2,16 @@
     {% include head.html %}
 
     <body>
+        <div class="mobile-nav">
+            <div class="">
+                <div class="mobile-nav-trigger">
+                    <div class="mobile-nav-bar"></div>
+                    <div class="mobile-nav-bar"></div>
+                    <div class="mobile-nav-bar"></div>
+                </div>
+            </div>
+        </div>
+
         <nav class="home-page-nav">
             {% include nav.html %}
         </nav>
@@ -20,7 +30,7 @@
         <div class="hp-about">
             <div class="container">
                 <div class="row justify-content-end">
-                    <div class="col-6 hp-about-content-container">
+                    <div class="col-md-6 hp-about-content-container">
                         <div class="hp-about-tag-container">
                             <div class="hp-about-tag">
                                 Conductor Musician
@@ -63,6 +73,11 @@
             </div>
             <div class="container">
                 {% include hp_upcoming_events.html %}
+                <div class="row">
+                    <div class="col-12">
+                        <a class="btn hp-concerts-cta" href="#">View More Events</a>
+                    </div>
+                </div>
             </div>
         </div>
         <section class="hp-video">

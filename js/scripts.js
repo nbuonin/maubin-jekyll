@@ -1,4 +1,20 @@
 $(document).ready(function() {
+    // Mobile Nav
+    $(".mobile-nav-trigger").click(function(){
+        $(".mobile-nav").css('display', 'none');
+        $("nav").css('background-color', '#FFFFFF');
+        $(".nav-row-container").fadeIn(500, function(){
+            $(".nav-row-container").css('display', 'flex');
+        });
+    });
+
+    $(".mobile-nav-exit").click(function(){
+        $(".nav-row-container").fadeOut(500, function(){
+            $(".mobile-nav").fadeIn();
+        });
+    });
+
+
     // AJAX Form Handler
     $("#success").hide();
     $("#error").hide();
