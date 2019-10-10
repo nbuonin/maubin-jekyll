@@ -12,11 +12,13 @@ div.marquee-container.home-page-marquee {
 $hp-about-height: 600px;
 .hp-about {
     height: $hp-about-height;
-    background-color: #d3d3d3;
-    background-image: url('../images/matt_aubin061_web.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-color: rgb(231, 231, 231);
+    @include respond-to(medium-plus) {
+        background-image: url('../images/matt_aubin061_web.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 
     .hp-about-content-container {
         display: flex;
@@ -44,18 +46,31 @@ $hp-about-height: 600px;
 
         .hp-about-copy-container {
             margin-bottom: 2em;
+            text-align: center;
+            font-family: $sans;
+            font-weight: 100;
+            line-height: 1.5em;
+            color: rgba(0, 0, 0, 0.5);
         }
         .hp-copy-shape-left {
+            display: none;
             float: left;
             shape-outside: polygon(30px -6px, -35px 70px, 85.12% 97.63%, 1px 85px, 1.66% 37.94%); 
             height: 150px;
             width: 50px;
+            @include respond-to(medium-plus) {
+                display: block;
+            }
         }
         .hp-copy-shape-right {
+            display: none;
             float: right;
             shape-outside: polygon(22px 5px, 82px 72px, -2.88% 102.66%, 49px 92px, 92.99% 26.08%); 
             height: 150px;
             width: 50px;
+            @include respond-to(medium-plus) {
+                display: block;
+            }
         }
 
         .hp-about-cta {
