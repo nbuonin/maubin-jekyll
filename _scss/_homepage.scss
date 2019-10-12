@@ -37,7 +37,10 @@ $hp-about-height: 600px;
         }
         .hp-about-tag-ampersand {
             position: relative;
-            font-size: 12rem;
+            font-size: 8.5rem;
+            @include respond-to(medium-plus) {
+                font-size: 12rem;
+            }
             left: 16rem;
             top: -4rem;
             width: fit-content;
@@ -191,34 +194,51 @@ $hp-about-height: 600px;
 .hp-video {
     background-color: rgb(51, 51, 51);
     color: #FFFFFF;
-    padding-top: 4em;
-    //padding-bottom: 4em;
+    padding-top: 2em;
+
+    @include respond-to(medium-plus) {
+        padding-top: 4em;
+    }
 
     h1 {
-       text-align: unset; 
        margin: 0;
+       position: absolute;
+       top: -1rem;
+       z-index: 100;
+       width: calc(100% - 2rem);
 
        @include respond-to(medium-plus) {
-           position: absolute;
-           top: -0.5rem;
-           z-index: 100;
+           width: unset;
+           text-align: unset; 
            margin-left: 3rem;
        }
     }
 
     .hp-video-item {
         background-color: rgb(61, 61, 61);
+        padding: 1rem 1rem;
+        padding-top: 2rem;
         @include respond-to(medium-plus) {
             padding: 3rem 4rem;
         }
 
         .hp-video-spcr {
+            margin: 0 auto 2em auto;
+            display: block;
             border-top: solid #FFFFFF 5px;
-            width: 6em;
-            margin-bottom: 2em;
+            width: 8em;
+            @include respond-to(medium-plus) {
+                margin: 0;
+                margin-bottom: 2em;
+                width: 6em;
+            }
         }
          h2, p {
              margin-bottom: 1em;
+             text-align: center;
+             @include respond-to(medium-plus) {
+                 text-align: left;
+             }
          }
          p {
              font-family: $sans;
@@ -231,14 +251,15 @@ $hp-about-height: 600px;
 }
 
 .carousel-control-prev-icon {
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    padding-right: 10%;
+    display: none;
 
     @include respond-to(medium-plus) {
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10%;
         margin-left: -11rem;
         border-radius: 100%;
         width: 120px;
@@ -254,14 +275,15 @@ $hp-about-height: 600px;
 }
 
 .carousel-control-next-icon {
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10%;
+    display: none;
 
     @include respond-to(medium-plus) {
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10%;
         margin-right: -11rem;
         border-radius: 100%;
         width: 120px;
