@@ -16,6 +16,7 @@ $nav-color: rgb(80, 80, 80);
 $lighten-up: grayscale($link-color);
 $light-color: lighten($tag-color, 25%);
 $body-link-color: adjust-color($link-color, $hue: 70deg, $saturation: -20%, $lightness: -20%);
+$std-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
 
 // Media Queries
 //$break-small: 600px;
