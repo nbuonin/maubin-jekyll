@@ -11,17 +11,21 @@
     </div>
 
     <div class="container logos"> <!-- each container will hold each performance event -->
-          <div class="fbd-logo logo">
-              <a href="http://fernandedecruck.com" target="_blank">
-                  {% include decruck_logo.html %}
-              </a>
-          </div>
-          <div class="tcs-logo-container logo">
-              <a href="https://chelseasymphony.org" target="_blank"><img src="images/TCSlogo-horizontal.png" alt=""></a>
-          </div>
-          <div class="mitj logo">
-              <a href="https://www.amazon.com/Mozart-Jungle-Season-1/dp/B00I3MNGCG"><img src="images/mitj.jpg"></a>
-          </div>
+        <div class="row projects-row">
+            <div class="col-md-4">
+                <a href="https://chelseasymphony.org">
+                    <img src="images/TCSlogo-horizontal.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <img src="images/Mozart-in-the-Jungle-Logo-edit.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <a href="https://fernandedecruck.com">
+                    {% include decruck_logo.html %}
+                </a>
+            </div>
+        </div>
     </div> <!-- end of .container -->
 
   </main>
