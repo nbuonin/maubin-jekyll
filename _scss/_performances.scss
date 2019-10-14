@@ -1,103 +1,101 @@
-nav.performances-nav {
-  color: #FFFFFF;
-}
-
-nav.performances-nav h1 a, nav.performances-nav .menu a {
-  @include respond-to(medium-plus) {
-    color: inherit;
-  }
-}
-
-div.marquee-container.performances-page-marquee {
-  background-image: url('../images/matt_aubin124-1.jpg');
-}
-
-main.performances-page .container, .container.narrow{
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: baseline;
-  max-width: 550px;
-  //align-items: center;
-  //margin: auto;
-
-  @include respond-to(medium-plus) {
-    flex-flow: row nowrap;
-    max-width: $max-container-width;
-    margin: none;
-  }
-
-  .col-1, .col-2 {
+.future-performance {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 1em;
+    @include dottedBottomCircleBorder($spacing: 7px, $radius: 1px);
     margin-bottom: 1em;
-    flex: 1;
-    width: 100%;
-  }
 
-  .col-1 {
     @include respond-to(medium-plus) {
-      text-align: right;
-      flex: 1;
-      margin-right: 4em;
-    }
-  }
-
-  .col-2 {
-    @include respond-to(medium-plus) {
-      flex: 2;
-    }
-  }
-
-  .little-block {
-    content: " ";
-    width: 30px;
-    height: 10px;
-    background-color: $secondary-color;
-    display: block;
-    margin: 0 auto 22px auto;
-  }
-}
-
-.past-schedule h2 {
-  margin-left: auto;
-}
-
-
-
-.container.alternate {
-  $border-width: 4px;
-
-  .col-1, .col-2 {
-    padding: 20px;
-    border: solid $border-width $secondary-color;
-    box-shadow: 0 0 0 $border-width;
-    @include respond-to(medium-plus) {
-      position: relative;
+        flex-flow: row nowrap;
+        align-items: normal;
+        @include dottedBottomCircleBorder($spacing: 15px, $radius: 1px);
     }
 
-    > * {
-      text-align: center;
-    }
+    $perf-mobile-spacing: 0.7em;
 
-    &:after {
-      content: ' ';
-      height: 0;
-      position: absolute;
-      width: 0;
-      border-bottom: solid 10px $secondary-color;
-      border-right: solid 10px $secondary-color;
-      border-left: solid 10px transparent;
-      border-top: solid 10px transparent;
-      bottom: 0px;
-      right: 0px;
-      z-index: 9999;
-    }
-  }
+    .perf-date {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-right: 1em;
+        border-right: solid 5px $md-grey;
+        margin-bottom: $perf-mobile-spacing;
+        @include respond-to(medium-plus) {
+            margin-bottom: 0;
+        }
 
-  .col-1 {
-    @include respond-to(medium-plus) {
-      flex: 1;
-      margin-right: 4em;
-      max-width: 406px;
+        .perf-day {
+            font-family: $sans;
+            font-weight: 600;
+            font-size: 5rem;
+            line-height: 0.7em;
+            color: $lt-grey;
+            width: 1.5em;
+            text-align: right;
+            margin-right: 10px;
+            @include respond-to(medium-plus) {
+                font-size: 2.75rem;
+                line-height: 1em;
+                margin-right: 0;
+            }
+        }
+
+        .perf-date-container {
+            display: flex;
+            flex-flow: column nowrap;
+            font-family: $sans;
+            font-weight: 600;
+            font-size: 1.75rem;
+            line-height: 1em;
+            text-transform: uppercase;
+            color: $dk-grey;
+            @include respond-to(medium-plus) {
+                font-size: 1rem;
+                .perf-month {
+                    margin-top: 0.3rem;
+                }
+            }
+        }
+    }    
+    .perf-name {
+        color: $md-grey;
+        font-family: $sans;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-bottom: $perf-mobile-spacing;
+        text-align: center;
+
+        @include respond-to(medium-plus) {
+            padding-left: 1em;
+            font-size: 1.25rem;
+            margin-bottom: 0;
+            text-align: left;
+            align-self: center;
+        }
     }
-  }
+    .perf-loc {
+        white-space: nowrap;
+    }
+    .perf-icons {
+        margin-bottom: $perf-mobile-spacing;
+        @include respond-to(medium-plus) {
+            margin-left: auto;
+            align-self: center;
+            margin-bottom: 0;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
+    .perf-link {
+        margin-bottom: $perf-mobile-spacing;
+        @include respond-to(medium-plus) {
+            margin-left: 1em;
+            margin-right: 2em;
+            margin-bottom: 0;
+            align-self: center;
+        }
+    }
 }
 

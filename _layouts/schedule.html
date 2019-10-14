@@ -5,14 +5,13 @@
   <nav class="performances-nav">
     {% include nav.html %}
   </nav>
-
-  <div class="marquee-container performances-page-marquee"></div>
-
   <main class="content performances-page" role="main">
     <div class="container">
       <h1>Schedule</h1>
     </div>
-    {% include upcoming_events.html %}
+    <div class="upcoming-perfs">
+        {% include hp_upcoming_events.html %}
+    </div>
     <div class="container past-schedule">
       <h2><a href="past_schedule.html">Previous Events <i class="fa fa-angle-double-right"></i></a></h2>
     </div>

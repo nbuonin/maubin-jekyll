@@ -9,24 +9,24 @@
   {% assign perf_date = perf_date | to_integer %}
   {% if perf_date >= current_date %}
   <div class="row justify-content-center future-perf-container" data-performance-date="{{perf_date}}" style="display: none;"> <!-- each container will hold each performance event -->
-      <div class="col-8 hp-future-performance">
-          <div class="hp-perf-date">
-              <div class="hp-perf-day">
+      <div class="col-8 future-performance">
+          <div class="perf-date">
+              <div class="perf-day">
                   {{ item.performance_date | date: "%d"}}
               </div>
-              <div class="hp-perf-date-container">
-                  <div class="hp-perf-month">
+              <div class="perf-date-container">
+                  <div class="perf-month">
                       {{ item.performance_date | date: "%b"}}
                   </div>
-                  <div class="hp-perf-year">
+                  <div class="perf-year">
                       {{ item.performance_date | date: "%Y"}}
                   </div>
               </div>
           </div>
-          <div class="hp-perf-name">
-              {{ item.group }} //<span class="hp-perf-loc">&nbsp;{{ item.location }}</span>
+          <div class="perf-name">
+              {{ item.group }} //<span class="perf-loc">&nbsp;{{ item.location }}</span>
           </div>
-          <div class="hp-perf-icons">
+          <div class="perf-icons">
               {% if item.conductor %}
                   {% include baton.html %}
               {% endif %}
@@ -34,7 +34,7 @@
                   {% include horn.html %}
               {% endif %}
           </div>
-          <div class="hp-perf-link">
+          <div class="perf-link">
               <a href="{{ item.group_link }}" class="btn-sm">Details</a>
           </div>
       </div>

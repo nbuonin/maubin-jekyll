@@ -57,7 +57,7 @@ $(document).ready(function() {
         .addTo(controller);
 
     /* Performances */
-    var performance = document.getElementsByClassName('future-perf-container');
+    var performance = $('.hp-perf > .future-perf-container');
     // Calculate the seconds from the epoch to midnight of the current day
     var secondsFromEpoch= Math.floor(Date.now() / 1000);
     var secondsInADay = 24 * 60 * 60;
@@ -74,5 +74,11 @@ $(document).ready(function() {
             el.style.display = "flex";
             perfCounter += 1;
         }
+    });
+
+    // Show all upcoming performances on the Schedule page
+    var upcomingPerformances= $('.upcoming-perfs > .future-perf-container');
+    Array.from(upcomingPerformances).map(function(el) {
+        el.style.display = "flex";
     });
 });
