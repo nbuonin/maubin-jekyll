@@ -92,9 +92,9 @@
                         {% assign videos = site.video | sort: "weight" %}
                         {% for item in videos %}
                         <div class="carousel-item{% if forloop.first %} active{% endif %}">
-                            <div class="row hp-video-item">
+                            <div class="row video-item">
                                 <div class="col-md-5">
-                                    <div class="hp-video-spcr"></div>
+                                    <div class="video-spcr"></div>
                                     <h2>{{ item.video_title }}</h2>
                                     {{ item.content }}
                                 </div>

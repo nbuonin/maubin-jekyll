@@ -13,9 +13,9 @@ em {
 
 main {
   display: block;
-  margin-bottom: 2em;
+  padding-bottom: 2em;
   @include respond-to(medium-plus) {
-    padding-top: 10px;
+    padding-top: 130px;
     min-height: 81vh;
   }
 
