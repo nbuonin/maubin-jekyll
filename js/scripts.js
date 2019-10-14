@@ -56,6 +56,13 @@ $(document).ready(function() {
         .setTween("nav.home-page-nav h1", {display: "block"})
         .addTo(controller);
 
+    /* Menu active class */
+    $('.menu a').map(function(idx, el){
+        if (el.href === window.location.href) {
+            $(el).addClass('active');
+        }
+    });
+
     /* Performances */
     var performance = $('.hp-perf > .future-perf-container');
     // Calculate the seconds from the epoch to midnight of the current day

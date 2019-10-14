@@ -65,6 +65,13 @@ nav {
         }
     }
 
+    .menu-container {
+        @include respond-to(medium-plus) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
     .menu ul {
         display: flex;
         flex-flow: column nowrap;
