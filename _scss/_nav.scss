@@ -1,5 +1,6 @@
 .mobile-nav {
     position: absolute;
+    top: 0;
     width: 100vw;
     display: flex;
     flex-flow: row nowrap;
@@ -18,6 +19,9 @@
             margin-bottom: 10px;
         }
     }
+    &.internal .mobile-nav-bar {
+        background-color: #000000;
+    }
 }
     
 nav {
@@ -26,6 +30,7 @@ nav {
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5),0 -5px 3px -10px #fff;
     z-index: 10000;
     position: absolute;
+    top: 0;
 
     h1 {
         margin-top: 1rem;

@@ -1,29 +1,30 @@
 a {
-  text-decoration: none;
-  color: #000000;
+    text-decoration: none;
+    color: #000000;
 
-  &:hover {
-    color: lighten(#000000, 50%);
-  }
+    &:hover {
+        color: lighten(#000000, 50%);
+    }
 }
 
 em {
-  font-style: italic;
+    font-style: italic;
 }
 
 main {
-  display: block;
-  padding-bottom: 2em;
-  @include respond-to(medium-plus) {
-    padding-top: 130px;
-    min-height: 81vh;
-  }
+    display: block;
+    padding-bottom: 2em;
+    padding-top: 35px;
+    @include respond-to(medium-plus) {
+        padding-top: 130px;
+        min-height: 81vh;
+    }
 
-  a {
-    color: $link-color;
-  }
+    a {
+        color: $link-color;
+    }
 }
 
 img, svg {
-  width: 100%;
+    width: 100%;
 }
