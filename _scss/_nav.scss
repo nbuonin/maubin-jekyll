@@ -132,13 +132,16 @@ div.marquee-container {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-top: 85px;
         text-align: center;
-        font-size: 2rem;
+        font-size: 4rem;
         line-height: 1em;
 
         @include respond-to(medium-plus) {
+            margin-top: 0;
             font-size: 5rem;
+            justify-content: center;
         }
     }
 }

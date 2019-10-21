@@ -31,18 +31,23 @@ $hp-about-height: 600px;
             width: min-content;
             text-align: center;
             text-transform: uppercase;
-            font-size: 3rem;
             line-height: 1em;
             z-index: 900;
+            font-size: 2.5rem;
+            @include respond-to(medium-plus) {
+                font-size: 3rem;
+            }
         }
         .hp-about-tag-ampersand {
             position: relative;
-            font-size: 8.5rem;
+            font-size: 7.5rem;
+            left: 14.25rem;
+            top: -3rem;
             @include respond-to(medium-plus) {
+                left: 16rem;
+                top: -4rem;
                 font-size: 12rem;
             }
-            left: 16rem;
-            top: -4rem;
             width: fit-content;
             color: rgb(197, 197, 197);
         }
@@ -113,36 +118,6 @@ $hp-about-height: 600px;
        }
     }
 
-    .hp-video-item {
-        background-color: rgb(61, 61, 61);
-        padding: 1rem 1rem;
-        padding-top: 2rem;
-        @include respond-to(medium-plus) {
-            padding: 3rem 4rem;
-        }
-
-        .hp-video-spcr {
-            margin: 0 auto 2em auto;
-            display: block;
-            border-top: solid #FFFFFF 5px;
-            width: 8em;
-            @include respond-to(medium-plus) {
-                margin: 0;
-                margin-bottom: 2em;
-                width: 6em;
-            }
-        }
-         h2, p {
-             margin-bottom: 1em;
-             text-align: center;
-             @include respond-to(medium-plus) {
-                 text-align: left;
-             }
-         }
-         p {
-             font-family: $sans;
-         }
-    }
 
     .hp-video-cta {
         margin: 2rem 0;
