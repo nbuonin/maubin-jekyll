@@ -1,0 +1,12 @@
+.projects-page {
+    .row {
+        margin-bottom: 2.5rem;
+
+        .project-image {
+            margin-bottom: 1em;
+            @include respond-to(medium-plus) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
