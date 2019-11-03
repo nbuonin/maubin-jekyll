@@ -88,4 +88,33 @@ $(document).ready(function() {
     Array.from(upcomingPerformances).map(function(el) {
         el.style.display = "flex";
     });
+
+    // Video Carousel
+    window.onYouTubeIframeAPIReady = function() {
+        // If a video is playing, stop the carousel
+        function onPlayerStateChange(event) {
+            if (event.data == 1) {
+                $('.carousel').carousel('pause');
+            }
+        }
+
+        window.players = new Array();
+        $('.ytplayer').each(function(idx, el){
+            var player = new YT.Player(el.id, {
+                events: {
+                    'onStateChange': onPlayerStateChange,
+                }
+            });
+            window.players.push(player);
+        });
+    }
+
+    // If a user clicks the carousel while the video is playing, stop the video
+    $('.carousel').on('slide.bs.carousel', function () {
+        window.players.map(function(player) {
+            if (player.getPlayerState() == 1) {
+               player.pauseVideo();
+            }
+        });
+    });
 });
