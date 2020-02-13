@@ -56,6 +56,14 @@ $(document).ready(function() {
         .setTween("nav.home-page-nav h1", {display: "block"})
         .addTo(controller);
 
+    new ScrollMagic.Scene({triggerElement: ".hp-about", duration: 200})
+        .setTween("nav.home-page-nav a", {color: "#000000"})
+        .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: ".hp-about", duration: 200})
+        .setTween("nav.home-page-nav .menu ul li.bordered-nav-el", {borderColor: "#000000"})
+        .addTo(controller);
+
     /* Menu active class */
     $('.menu a').map(function(idx, el){
         if (el.href === window.location.href) {

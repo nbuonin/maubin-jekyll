@@ -6,7 +6,8 @@ nav.home-page-nav {
 }
 
 div.marquee-container.home-page-marquee {
-  background-image: url('../images/matt_aubin083-1.jpg');
+  background-image: url('../images/matt_aubin083_MainPhoto.jpg');
+  color: #FFFFFF;
 }
 
 $hp-about-height: 600px;
@@ -14,7 +15,7 @@ $hp-about-height: 600px;
     height: $hp-about-height;
     background-color: rgb(231, 231, 231);
     @include respond-to(medium-plus) {
-        background-image: url('../images/matt_aubin061_web.jpg');
+        background-image: url('../images/matt_aubin083_SecondPhoto.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
