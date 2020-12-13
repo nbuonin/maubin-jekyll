@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    // Sentry test errors
+    foo();
+    console.log(1/0);
     // Mobile Nav
     $(".mobile-nav-trigger").click(function(){
         $(".mobile-nav").css('display', 'none');
