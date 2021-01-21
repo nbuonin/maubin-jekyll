@@ -21,7 +21,7 @@ $(document).ready(function() {
     $("#contact-form").validate({
         submitHandler: function(form) {
             $.ajax({
-                url: "//formspree.io/matthewhornblower@gmail.com",
+                url: "https://formspree.io/f/mdopbgpk",
                 method: "POST",
                 data: {
                     name: $(form).find("input[name='name']").val(),
