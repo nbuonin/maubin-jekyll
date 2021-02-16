@@ -1,0 +1,17 @@
+---
+title: The Chelsea Symphony 
+image: TCSlogo-horizontal.png
+lede: >
+  Dr. Aubin serves as an Artistic Director for The Chelsea Symphony in New York
+  City. The Chelsea Symphony is a dynamic, self-governing ensemble with a major
+  cultural presence in Manhattan's Chelsea neighborhood.
+layout: project
+project_catagory: on_stage
+project_order: 0
+---
+Dr. Aubin serves as an Artistic Director for The Chelsea Symphony in New York
+City. The Chelsea Symphony is a dynamic, self-governing ensemble with a major
+cultural presence in Manhattan's Chelsea neighborhood. It presents music of the
+highest caliber while upending the traditional hierarchy of the classical
+orchestra: our musicians rotate as featured soloists, conductors, and
+composers.

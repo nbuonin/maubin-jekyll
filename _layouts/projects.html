@@ -1,6 +1,5 @@
 <html>
 {% include head.html %}
-
 <body>
     <div class="mobile-nav internal">
         <div class="">
@@ -18,120 +17,22 @@
     <div class="container">
       <h1>Projects</h1>
     </div>
-
-    <div class="container logos"> <!-- each container will hold each performance event -->
-        <div class="row">
-            <div class="col-md-4 project-image">
-                <a href="https://chelseasymphony.org">
-                    <img src="images/TCSlogo-horizontal.png" alt="">
-                </a>
+    <div class="container">
+        {% for c in site.data.project_catagories %}
+            <div class="row">
+                <div class="col-12">
+                    <h2>{{ c.heading }}</h2>
+                </div>
             </div>
-            <div class="col-md-8">
-                <h2>The Chelsea Symphony</h2>
-                <p>
-                    Dr. Aubin serves as an Artistic Director for The Chelsea
-                    Symphony in New York City. The Chelsea Symphony is a
-                    dynamic, self-governing ensemble with a major cultural
-                    presence in Manhattan's Chelsea neighborhood. It presents
-                    music of the highest caliber while upending the traditional
-                    hierarchy of the classical orchestra: our musicians rotate
-                    as featured soloists, conductors, and composers.
-                </p>
+            <div class="row">
+            {% assign projects = site.project | where: "project_catagory", c.catagory | sort: "project_order" %}
+            {% for project in projects %}
+                {% include project_item.html project=project %}
+            {% endfor %}
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 project-image">
-                <a href="https://www.jacksonsymphony.org">
-                    <img src="images/Jackson-Symphony-Orchestra.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-8">
-                <h2>Jackson Symphony Orchestra</h2>
-                <p>
-                    Dr. Aubin is the Music Director and Executive Director of
-                    the Jackson Symphony Orchestra in Jackson, Michigan. The
-                    JSO present 5 signatures series concerts, 3 pops concerts
-                    and several non-classical (Music-on-Tap) concerts each
-                    year. The JSO owns its facility, which houses its Community
-                    Music School and has a 4 million dollar endowment.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 project-image">
-                <a href="https://fernandedecruck.com">
-                    {% include decruck_logo_signature.html %}
-                </a>
-            </div>
-            <div class="col-md-8">
-                <h2>Fernande Breilh Decruck</h2>
-                <p>
-                    Dr. Aubin is the foremost scholar of the French composer
-                    Fernande Breilh-Decruck. He has earned multiple research
-                    grants to study her significant life and work. A champion
-                    of the critical role of women in composition, Dr. Aubin is
-                    working to promote Decruck's newly discovered lost music.
-                    He has edited and created critical editions of her work,
-                    which are now in the process of publication, and has
-                    organized performances of Decruck's music in the United
-                    States and abroad. 
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 project-image">
-                <a href="https://chelseasymphony.org">
-                    <img src="images/TCS_DOC_crop.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-md-8">
-                <h2>The Chelsea Symphony at Rikers</h2>
-                <p>
-                    Members of The Chelsea Symphony and Dr. Aubin have designed
-                    and conducted a series of outreach concerts for inmates on
-                    Rikers Island through a continued relationship with the NYC
-                    Department of Correction.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 project-image">
-                <a href="https://chelseasymphony.org">
-                    <img src="images/TCS_AMNH.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-8">
-                <h2>The Chelsea Symphony at AMNH</h2>
-                <p>
-                    Dr. Aubin has collaborated with the American Museum of
-                    Natural History for EarthFest. TCS performed under the
-                    whale in the Milstein Family Hall of Ocean Life for
-                    EarthFest 2018. Future collaborations are currently being
-                    explored.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 project-image">
-                <img src="images/mitj.jpg" alt="">
-            </div>
-            <div class="col-md-8">
-                <h2>Mozart in the Jungle</h2>
-                <p>
-                    Dr. Aubin and members of The Chelsea Symphony served as
-                    background musicians, actor coaches and consultants for the
-                    Golden Globe award-winning television series <em>Mozart in the
-                        Jungle</em>. Additionally, Dr. Aubin was the off-camera
-                    conductor for the season 3 episode "Not Yet Titled", which
-                    featured a live recording of TCS musicians performing
-                    excerpts from Olivier Messiaen's Turangalîla-Symphonie.
-                </p>
-            </div>
-        </div>
-    </div> <!-- end of .container -->
-
+        {% endfor %}
+    </div>
   </main>
-
   {% include footer.html %}
   </body>
 </html>

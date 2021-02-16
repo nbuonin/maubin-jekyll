@@ -1,0 +1,17 @@
+<div class="col-md-6">
+    <div class="project-item-container">
+        <div class="project-image-container">
+            <img class="project-image" src="/images/{{ include.project.image }}" alt="">
+        </div>
+        <div class="project-item-copy">
+            <h3>{{ include.project.title }}</h3>
+            <p>{{ include.project.lede }}</p>
+        </div>
+        {% if include.project.content.size > 1 %}
+        <div class="project-cta">
+            <a href="{{ include.project.url }}" class="btn-sm">Learn More</a>
+        </div>
+        {% endif %}
+    </div>
+</div>
+

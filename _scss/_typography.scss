@@ -37,14 +37,14 @@ nav h1 {
 }
 
 
-h2 {
+h2, .h2 {
   font-family: $body;
   font-size: 1.25em;
   line-height: 1.25em;
   font-weight: 600;
 }
 
-h3 {
+h3, .h3 {
   font-family: $display;
   font-size: 1.1em;
   //font-weight: 700;

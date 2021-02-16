@@ -23,6 +23,8 @@ collections:
     output: true
   video:
     output: true
+  project:
+    output: true
 
 defaults:
   - scope:

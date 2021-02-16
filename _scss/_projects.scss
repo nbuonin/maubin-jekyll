@@ -1,4 +1,15 @@
 .projects-page {
+    h2 {
+        //@extend .h3;
+        font-size: 1.5em;
+        border-bottom: solid black 4px;
+        width: fit-content;
+    }
+    h3 {
+        //@extend .h2;
+        //font-size: 1.1em;
+        margin-bottom: 1em;
+    }
     .row {
         margin-bottom: 2.5rem;
 
@@ -9,4 +20,16 @@
             }
         }
     }
+}
+
+.project-item-container {
+    margin-bottom: 2.5em;
+}
+
+.project-image-container {
+    padding: 1em 2.5em;
+}
+
+.project-item-copy {
+    margin-bottom: 1em;
 }
