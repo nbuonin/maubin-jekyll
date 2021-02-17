@@ -1,14 +1,12 @@
 .projects-page {
     h2 {
-        //@extend .h3;
-        font-size: 1.5em;
-        border-bottom: solid black 4px;
+        text-transform: uppercase;
+        padding-bottom: 0.5em;
+        border-bottom: solid black 5px;
         width: fit-content;
     }
     h3 {
-        //@extend .h2;
-        //font-size: 1.1em;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
     }
     .row {
         margin-bottom: 2.5rem;
