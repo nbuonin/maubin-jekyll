@@ -4,10 +4,11 @@ div.marquee-container.about-page-marquee {
 
 main.about-page {
   .container.narrow {
-    // 2019: revisit this
-    //max-width: 600px;
-    //flex-flow: column nowrap;
-    //line-height: 1.4em;
-    //margin: auto;
+    max-width: 600px;
+    flex-flow: column nowrap;
+
+    p {
+        margin-bottom: 1em;
+    }
   }
 }
