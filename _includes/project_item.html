@@ -1,11 +1,13 @@
 <div class="col-md-6">
     <div class="project-item-container">
+        {% if include.project.image %}
         <div class="project-image-container">
             <img class="project-image" src="/images/{{ include.project.image }}" alt="">
         </div>
+        {% endif %}
         <div class="project-item-copy">
             <h3>{{ include.project.title }}</h3>
-            <p>{{ include.project.lede }}</p>
+            <p>{{ include.project.lede | markdownify }}</p>
         </div>
         {% if include.project.content.size > 1 %}
         <div class="project-cta">
