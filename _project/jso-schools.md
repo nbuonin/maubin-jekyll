@@ -1,5 +1,6 @@
 ---
 title: Jackson Symphony Orchestra in the Schools
+image: JSO_education.jpeg
 lede: >
   The Jackson Symphony Orchestra is committed to education at all levels. Their
   reach spans all ages with partnerships and appearances including: Jackson

@@ -1,5 +1,6 @@
 ---
 title: Younger 
+image: younger.jpeg
 lede: >
   Dr. Aubin served as background coach and consultant for the television series _Younger_.
 layout: project

@@ -1,5 +1,6 @@
 ---
 title: Fernande Breilh Decruck 
+image: decruck.jpg 
 lede: >
   Dr. Aubin is the foremost scholar of the French composer Fernande
   Breilh-Decruck. He has earned multiple research grants to study her

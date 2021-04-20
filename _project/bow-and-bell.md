@@ -1,5 +1,6 @@
 ---
 title: Bow and Bell 
+image: BowAndBell_Banner.jpeg
 lede: >
   Bow and Bell is a horn and viola duo consisting of members Matthew Aubin and
   Mitsuru Kubo. Born out of the pandemic-era, they are committed to creating new

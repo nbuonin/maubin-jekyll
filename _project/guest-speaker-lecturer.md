@@ -1,5 +1,6 @@
 ---
 title: Guest Speaker and Lecturer
+image: guest_speaker.jpeg
 lede: >
   Dr. Aubin has presented and conducted at conferences, universities, and
   schools nationwide. Topics have spanned The Music of Fernand Decruck,

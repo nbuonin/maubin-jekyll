@@ -1,5 +1,6 @@
 ---
 title: IZOD Commercial 
+image: IZOD.jpeg
 lede: >
   Dr. Aubin served as on-camera conductor for a 2017 IZOD commercial.
 layout: project
