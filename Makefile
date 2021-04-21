@@ -2,4 +2,8 @@ include *.mk
 
 runserver:
 	bundle exec jekyll serve
-.PHONY: runserver
+
+build:
+	bundle exec jekyll build
+
+.PHONY: runserver build
