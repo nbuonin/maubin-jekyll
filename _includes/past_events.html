@@ -33,6 +33,9 @@
               {% if item.horn %}
                   {% include horn.html %}
               {% endif %}
+              {% if item.presentation %}
+                  {% include presentation.html %}
+              {% endif %}
           </div>
           <div class="perf-link">
               <a href="{{ item.group_link }}" class="btn-sm">Details</a>
