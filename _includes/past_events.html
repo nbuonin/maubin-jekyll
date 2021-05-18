@@ -36,6 +36,9 @@
               {% if item.presentation %}
                   {% include presentation.html %}
               {% endif %}
+              {% if item.education %}
+                  {% include education.html %}
+              {% endif %}
           </div>
           <div class="perf-link">
               <a href="{{ item.group_link }}" class="btn-sm">Details</a>
