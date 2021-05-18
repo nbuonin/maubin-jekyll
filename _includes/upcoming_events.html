@@ -36,6 +36,9 @@
               {% if item.presentation %}
                   {% include presentation.html %}
               {% endif %}
+              {% if item.presentation_alt %}
+                  {% include presentation_alt.html %}
+              {% endif %}
               {% if item.education %}
                   {% include education.html %}
               {% endif %}
