@@ -13,7 +13,7 @@ For example, the following would be a valid file name:
 
 
 ## Adding Events
-Events are placed in the _performance folder.  The way the files are named are arbitrary, so long as it follows the rules above.  For your own sanity, it might make sense to name the files with the performance dates so you can easily see the performances in order.
+Events are placed in the `_performance` folder.  The way the files are named are arbitrary, so long as it follows the rules above.  For your own sanity, it might make sense to name the files with the performance dates so you can easily see the performances in order.
 
 The front matter in each file is required, though the site won't return an error is theres an issue.  To maintain consistency, copy the front matter from a file that you know works.
 
@@ -29,7 +29,7 @@ group_link: "http://chelseasymphony.org/concert/threshold"
 The 'performance_date' value corresponds to the date shown on the site.  The 'group' value corresponds to the group name shown.  The 'group_link' is the link that is added to the group name.  This value is optional.
 
 ## Adding Videos
-Videos are placed in the _video folder.  The videos files need to follow the naming convention above.  The front matter should include the following:
+Videos are placed in the `_video` folder.  The videos files need to follow the naming convention above.  The front matter should include the following:
 ```
 ---
 video_title: Samuel Barber, Medea<br/> Op. 23. Nos. 1 &amp; 2
@@ -47,4 +47,13 @@ Markdown files use a number of shorthand helpers which can be found [here](https
 
 Note that these are only in effect in the body of a Markdown file, not in the front matter.
 
-
+### Adding Icons to Events
+There are three different icons available to denote that an event is a horn performance, conducting performance, or an education-related event. To add these icons to an event, you can activate them like so:
+```
+---
+... other front matter
+horn: true
+conductor: true
+education: true
+---
+```
