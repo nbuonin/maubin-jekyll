@@ -6,7 +6,7 @@ landscape, Dr. Matthew Aubin is constantly reaching new audiences through
 innovative performance formats and creative initiatives both on and off the
 podium.
 
-In his 3rd season as Music Director of the Jackson Symphony Orchestra, Dr.
+In his 5th season as Music Director of the Jackson Symphony Orchestra, Dr.
 Aubin also serves as Artistic Director for The Chelsea Symphony in New York
 City. In this role he has led highly visible collaborations with partners such
 as actor John Lithgow, award-winning television series *Mozart in the Jungle*,
@@ -16,7 +16,7 @@ Symphony’s annual competition for emerging composers with high profile
 adjudicators such as Conductor Laureate of the *Seattle Symphony* and music
 director of the *All-Star Orchestra*, Gerard Schwarz. Dr. Aubin has led TCS in
 their Lincoln Center debut and conducted the New York City premieres of works
-by Mark O’Connor, Fazil Say and Caroline Shaw, among others. 
+by Mark O’Connor, Fazil Say and Caroline Shaw, among others.
 
 As a consultant for the Amazon Prime series *Mozart in the Jungle* created by
 Roman Coppola and Jason Schwartzman, Dr. Aubin was the off-camera conductor for
@@ -36,23 +36,25 @@ has expanded, and the organization is now regularly reaching audiences of all
 ages through expanded family concerts, education concerts, and the JSO's Music
 on Tap series geared towards young adults. During the 2020 pandemic, he
 launched a series of digital initiatives, most notably the Random Acts of Music
-series. Under Dr. Aubin's leadership, the JSO is releasing a series of
+series. Under Dr. Aubin's leadership, the JSO also released a series of
 asynchronous, multimedia educational videos to be used in K-12 classrooms.
-These videos will be based on the 2021 season's virtual programming and will
-explore musical concepts.
+These videos were based on the 2021 season's virtual programming and explored
+musical concepts.
 
 Dr. Aubin is the foremost scholar on the French composer Fernande
 Breilh-Decruck. He has earned multiple research grants to study her significant
 life and work. A champion of the critical role of women in composition, Dr.
 Aubin is working to promote Decruck’s newly discovered lost music. He has
 edited and created critical editions of her work, which are now in the process
-of publication with Gérard Billaudot Éditeur, and has organized performances of
-Decruck’s music in the United States and abroad. The 2021-2022 season will
-bring a large-scale recording project of Decruck’s orchestral works aimed at
-giving orchestras further access and insight into her brilliant work.
+of publication with the French publishing firm Gérard Billaudot, and has
+organized performances of Decruck’s music in the United States and abroad. The
+2021-2022 season brings a large-scale recording project of Decruck’s orchestral
+works aimed at giving orchestras further access and insight into her brilliant
+work.
 
 Dr. Aubin continues to be active as a freelance horn player, and regularly
 performs across the country. A devoted music educator, Dr. Aubin's past
 associations include Assistant Professor of Music at Washington State
 University, Adjunct faculty at The Hartt School and Educational Programs
 Conductor for the Hartford Symphony Orchestra.
+
