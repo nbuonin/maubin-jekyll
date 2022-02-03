@@ -94,7 +94,12 @@ $(document).ready(function() {
     // Show all upcoming performances on the Schedule page
     var upcomingPerformances= $('.upcoming-perfs > .future-perf-container');
     Array.from(upcomingPerformances).map(function(el) {
-        el.style.display = "flex";
+        var pdate = el.dataset.performanceDate;
+        pdate = parseInt(pdate);
+
+        if (pdate >= today) {
+            el.style.display = "flex";
+        }
     });
 
     // Video Carousel
