@@ -15,22 +15,21 @@
     {% include nav.html %}
   </nav>
   <main class="content contact-page" role="main">
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfUcJoiAAAAACPWCfDClbk67pBeFO8XUNW8vrg7"></script>
     <div class="container">
       <h1>Contact</h1>
     </div>
 
     <div class="container narrow"> <!-- each container will hold each performance event -->
-      <form id="contact-form" action="//formspree.io/f/mdopbgpk"
-            method="POST">
+      <form id="contact-form">
           <label for="name">Name</label>
           <input type="text" name="name" id="name" required placeholder="Name">
           <label for="message">Message</label>
           <textarea type="text" name="message" id="message" required placeholder="Message"></textarea>
           <label for="email">E-Mail Address</label>
           <input type="email" name="_replyto" id="email" required placeholder="E-Mail">
-          <input type="hidden" name="_next" value="/#contact-form" />
-          <input type="text" name="_gotcha" style="display:none" />
-          <input type="submit" value="Send">
+          <input id="form-submit" type="submit" value="Send">
       </form>
       <div id="success">
         <p>Thanks for your note.  I'll be in touch soon.</p>

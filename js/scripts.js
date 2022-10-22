@@ -18,27 +18,33 @@ $(document).ready(function() {
     // AJAX Form Handler
     $("#success").hide();
     $("#error").hide();
-    $("#contact-form").validate({
-        submitHandler: function(form) {
-            $.ajax({
-                url: "https://formspree.io/f/mdopbgpk",
-                method: "POST",
-                data: {
-                    name: $(form).find("input[name='name']").val(),
-                    message: $(form).find("textarea[name='message']").val(),
-                    email: $(form).find("input[name='_replyto']").val()
-                },
-                dataType: "json",
-                success: function() {
-                    $("#contact-form").fadeOut();
-                    $("#success").fadeIn();
-                },
-                error: function() {
-                    $("#error").fadeIn();
-                }
+    $("#contact-form").on("submit", function(evt) {
+        evt.preventDefault();
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfUcJoiAAAAACPWCfDClbk67pBeFO8XUNW8vrg7', {action: 'submit'}).then(function(token) {
+                $.ajax({
+                    //url: "https://formspree.io/f/mdopbgpk",
+                    url: "https://formspree.io/f/xknpygbe",
+                    method: "POST",
+                    dataType: "json",
+                    data: {
+                        name: $(evt.target).find("input[name='name']").val(),
+                        message: $(evt.target).find("textarea[name='message']").val(),
+                        email: $(evt.target).find("input[name='_replyto']").val(),
+                        "g-recaptcha-response": token
+                    },
+                    success: () => {
+                        $("#contact-form").fadeOut();
+                        $("#success").fadeIn();
+                    },
+                    error: (err) => {
+                        $("#error").fadeIn();
+                    }
+                });
             });
-        }
+        });
     });
+
 
     /* Scroll-Spy */
     var controller = new ScrollMagic.Controller({loglevel: 3});
