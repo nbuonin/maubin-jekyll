@@ -23,8 +23,7 @@ $(document).ready(function() {
         grecaptcha.ready(function() {
             grecaptcha.execute('6LfUcJoiAAAAACPWCfDClbk67pBeFO8XUNW8vrg7', {action: 'submit'}).then(function(token) {
                 $.ajax({
-                    //url: "https://formspree.io/f/mdopbgpk",
-                    url: "https://formspree.io/f/xknpygbe",
+                    url: "https://formspree.io/f/mdopbgpk",
                     method: "POST",
                     dataType: "json",
                     data: {
