@@ -122,6 +122,10 @@ nav {
         border-right: solid 1px;
         border-color: #FFFFFF;
     }
+
+    &.home-page-nav .no-border-nav-el {
+        border-right: none;
+    }
 }
 
 
