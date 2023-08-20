@@ -75,6 +75,7 @@ $hp-about-height: 600px;
                 display: block;
             }
         }
+
         .hp-copy-shape-right {
             display: none;
             float: right;
@@ -88,6 +89,56 @@ $hp-about-height: 600px;
 
         .hp-about-cta {
             margin: 0 auto;
+        }
+    }
+}
+
+.hp-recording {
+    background-color: rgb(231, 231, 231);
+
+    .hp-recording-content-container {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+
+        .hp-recording-tag-container {
+            h1 {
+                font-size: 2.5rem;
+                letter-spacing: normal;
+                @include respond-to(medium-plus) {
+                    font-size: 3rem;
+                }
+                margin: 0 0 1em 0;
+            }
+        }
+
+        .hp-recording-copy-container {
+            margin-bottom: 2em;
+            text-align: center;
+            font-family: $sans;
+            font-weight: 100;
+            line-height: 1.5em;
+            color: rgba(0, 0, 0, 0.5);
+            .quote {
+                font-size: 1.5rem;
+            }
+            p {
+                margin-bottom: 1em;
+            }
+            @include respond-to(medium-plus) {
+                padding: 0em 6em;
+            }
+        }
+
+        .hp-recording-cta {
+            margin: 0 auto;
+        }
+    }
+
+    .hp-recording-image-container {
+        padding: 2em;
+        img {
+            max-width: 500px;
         }
     }
 }
