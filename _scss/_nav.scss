@@ -111,6 +111,10 @@ nav {
                     border-right: none;
                 }
 
+                &.no-border-nav-el {
+                    border-right: none;
+                }
+
                 a.active {
                     border-bottom: solid black 5px;
                 }

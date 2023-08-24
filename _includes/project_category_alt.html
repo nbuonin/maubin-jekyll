@@ -1,0 +1,17 @@
+<div class="col-md-5 project-category-col">
+    <div class="project-category-container">
+        <div class="project-category-title">
+            <h2>{{ include.project.title }}</h2>
+        </div>
+        <div class="project-alt-content">
+            {{ include.project.content | truncatewords: 6 }}
+            <p></p>
+        </div>
+        <div class="project-cta">
+            <a href="{{ include.project.url }}" class="btn-sm">Learn More</a>
+        </div>
+    </div>
+</div>
+<div class="col-md-7 project-category-col" >
+    <img src="./images/{{ include.project.image }}">
+</div>

@@ -71,7 +71,8 @@ $(document).ready(function() {
 
     /* Menu active class */
     $('.menu a').map(function(idx, el){
-        if (el.href === window.location.href) {
+        var elUrlRoot = el.href.split('.')[0];
+        if (window.location.href.startsWith(elUrlRoot)) {
             $(el).addClass('active');
         }
     });

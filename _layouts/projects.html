@@ -17,20 +17,13 @@
     <div class="container">
       <h1>Projects</h1>
     </div>
-    <div class="container">
-        {% for c in site.data.project_catagories %}
-            <div class="row">
-                <div class="col-12">
-                    <h2>{{ c.heading }}</h2>
-                </div>
-            </div>
-            <div class="row">
-            {% assign projects = site.project | where: "project_catagory", c.catagory | sort: "project_order" %}
-            {% for project in projects %}
-                {% include project_item.html project=project %}
-            {% endfor %}
-            </div>
+    <div class="container-fluid">
+        <div class="row">
+        {% assign projects = site.pages | where: "layout", "project" | sort: "weight" %}
+        {% for project in projects %}
+            {% include project_category.html project=project %}
         {% endfor %}
+        </div>
     </div>
   </main>
   {% include footer.html %}
